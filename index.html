@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeBakery</title>
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style/styleCompany.css">
+    <link rel="stylesheet" href="../style/styleDilivery.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <!-- <link rel="stylesheet" href="css/style1366.css">
+    <link rel="stylesheet" href="css/style768.css">
+    <link rel="stylesheet" href="css/style360.css"> -->
+</head>
+<body>
+    
+    <header class="header" id="header">
+        <div class="wrapper">
+            <div class="header_content">
+                <div class="logo"><img class = "img_logo" src="img/logo.jpg" alt="logo"></div>
+                    <div class="header_menu menu">
+                        <div class="menu_icon">
+                            <span class="burger1"></span>
+                            <span class="burger2"></span>
+                            <span class="burger3"></span>
+                        </div>
+                        <div class="menu_body">
+                            <ul class="button_container">
+                                <li class="href_header" ><a href="#catalogH1" class="menu_link">Смотреть каталог</a></li>
+                                <li class="href_header" type="button"><a href="#modalDelivery" class="menu_link">Предзаказ и доставка</a></li>
+                                <li class="href_header" type="button" id="showAboutCompany" ><a class="menu_link" href="#aboutCompanyModalWindow">О компании</a></li>
+                                <li class="href_header" type="button"><a href="#footer" class="menu_link">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> 
+    <main>
+        <div class="wrapper">
+            <div class="slider-container"> <!-- Начало разметки слайдера -->
+              <div class="slider__arrow-left"> <!-- Блок для кнопки прокрутки к предыдущему слайду -->
+                <div class="arrow-left__block"><i class="fa-solid fa-circle-chevron-left"></i> <!-- Здесь может быть ваш контент --> </div>
+              </div>
+        
+              <div class="slider-block"> <!-- Блок для линии слайдера и блокас пагинацией -->
+                <div class="slider-block__wrapper"> <!-- Ограничитель видимости линии слайдера -->
+                    
+                  <div class="slider-line"> <!-- Линия слайдера -->
+                    <!-- Установите необходимое количество элементов -->
+                    <!-- Для этого скопируйте строку ниже необходимое количество раз -->
+                    <div class="slider-line__item"><div class="line-item__block"><img src="img/slide1.JPG" alt=""></div></div>
+                    <div class="slider-line__item"><div class="line-item__block"><img src="img/slide2.JPG" alt=""></div></div>
+                    <div class="slider-line__item"><div class="line-item__block"><img src="img/slide3.JPG" alt=""></div></div>
+                  </div>
+                
+                </div>
+        
+                <div class="slider-block__pagination"> <!-- Блок для пагинаци -->
+                  <!-- Необходимое количество добавится автоматически, -->
+                  <!-- в зависимости от общего количества элементов в линии слайдера -->
+                  <!-- и количества одновременно видимых элементов -->
+                  <!-- <div class="pagination-block"><div class="pagination-block__filler"></div></div> -->
+                </div>
+              </div>
+        
+              <div class="slider__arrow-right"> <!-- Блок для кнопки прокрутки к следующему слайду -->
+                <div class="arrow-right__block"><i class="fa-solid fa-circle-chevron-right"></i> <!-- Здесь может быть ваш контент --> </div>
+              </div>
+            </div>
+        
+        </div>
+
+
+        
+
+
+
+        <!-- Блок каталог -->
+        <div class="catalog">
+            <div class="wrapper">
+                <div class="containerSearchH1" id="catalogH1">
+                    <h1>КАТАЛОГ</h1>
+                    <div class="search">
+                        <input id="search" type="text" placeholder="Поиск по товарам">
+                        <button class="buttonSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+            <div class="filterCatalog">
+                <div class="category" ><button id="allCatalog">Весь каталог</button></div>
+                <div class="category" ><button id="cake">Торты</button></div>
+                <div class="category"><button id="miniCake">Пирожные</button></div>
+                <div class="category" ><button id="macarons">Макаронс</button></div>
+                <div class="category" ><button id="easter">Пасха</button></div>
+            </div>
+                <div class="container_catalog" id="container_catalog"></div>
+            </div>    
+        </div>
+    </main>
+    <footer>
+        <div class="footer_content" id="footer">
+            <div class="w">
+                 <div class="image_logo">
+                    <img src="img/logo.jpg" alt="Logotip">
+                </div>
+                <div class="tel">
+                    <h2><i class="fa-brands fa-square-whatsapp"></i>   8-951-498-20-30</h2>
+                    <a href="https://mail.yandex.ru/?uid=724124545#message/184647584722193947">daryam963@yandex.ru</a>
+                    <p>Политика конфиденциальности</p>
+                </div>
+                <div class="menu2">
+                    <div class="href_footer" ><a href="#catalogH1"> Каталог</a></div>
+                    <div class="href_footer" type="button"><a href="#aboutCompanyModalWindow">О компании</a></div>
+                    <div class="href_footer" type="button"><a href="">Контакты</a></div>
+                </div>
+                <div class="contacts">
+                    <div class="href_footer_inst" ><a href="https://www.instagram.com/bonn_appetitt_?igsh=MTB5bWRqeGlkZGhvbw=="><i class="fa-brands fa-instagram"></i></a></div>
+                </div>
+            </div>
+               
+            
+        </div>
+    </footer>
+
+<!--  Модальное окно "О Компании" -->
+<div class="aboutCompany" id="aboutCompanyModalWindow">
+    <a class="aboutCompanyArea" href="#header"></a>
+    <div class="wrapper">
+        <div class="containerAboutCompany">
+            <div class="containerText">
+                <div class="headModal">
+                    <h2>О КОМПАНИИ</h2>
+                    <a href="#header">X</a>
+                </div>
+                
+                <div class="containerTextPhoto">
+                    <div class="textContent">
+                        <p>Здравствуйте! Меня зовут Дарья! <br></p>
+                        <p>Люблю печь с детства, это мне передалось от моей Мамы ❤️ <br>С тех пор у меня со сладким особая любовь!
+                           В моем ассортименте можно найти классику, такую как Медовик и Наполеон. А также современные муссовые торты, макаронс и Анну Павлову ❤️</p>
+                        <p>В каждый свой торт я вкладываю максимум любви, тепла и вдохновения! </p>
+                    </div>
+                    <div class="imgContent">
+                        <!-- <img src="img/photoCompany.jpg" alt="photoCompany"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--  Модальное окно "Доставка" -->
+<div class="modalDelivery" id="modalDelivery">
+    <a class="modalDeliveryArea" href="#header"></a>
+    <div class="wrapper">
+        <div class="containerDilivery">
+            <div class="containerTextDivilery">
+                <div class="headModalDilivery">
+                    <h2>ПРЕДЗАКАЗ И ДОСТАВКА</h2>
+                    <a href="#header">X</a>
+                </div>
+                    
+                <div class="containerTextPhotoDilivery">
+                    <div class="textContentDilivery">
+                        <p><b>1.</b> Заказ к определенному времени/предзаказ.<br>
+                                Оформить предзаказ вы можете <br>по ссылке <b>Telegram</b><a id="telegram" href="https://t.me/+79514982030">   <i class="fa-brands fa-telegram"></i></a>.</p>
+                        <p><b>2.</b> Вы можете заказать доставку продукции кондитерской <b>«Bonn Appetit»</b>.<br>
+                                Доставка бесплатная при заказе:<br>
+                                от <b>3000 руб.</b> в Ростове-на-Дону<br>
+                                *за исключением праздничных дней.<br>
+                                При заказе на меньшую сумму или при доставке за пределы города клиент самостоятельно вызывает курьерскую службу.<br>
+                        </p>
+                    </div>
+                    <div class="imgContentDivilery">
+                        <div class="imgDivilery1"><img src="/img/photoDivilery1.jpg" alt=""></div>
+                        <div class="imgDivilery2"><img src="/img/photoDivilery2.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="../js/data.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
