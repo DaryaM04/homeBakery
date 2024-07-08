@@ -13,10 +13,6 @@ body{
     overflow: auto;
 }
 
-/* body.lock{
-    overflow: hidden;
-} */
-
 
 /* Блок header */
 .header{
